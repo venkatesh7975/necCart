@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function Product() {
+export default function Product({ id, image, title }) {
   return (
-    <div>Product</div>
-  )
+    <div>
+      <div>
+        <li key={id}>{title}</li>
+        <img src={image} />
+      </div>
+    </div>
+  );
 }
